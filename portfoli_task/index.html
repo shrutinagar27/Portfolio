@@ -1,0 +1,392 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title>My Portfolio</title> 
+	<link rel="stylesheet"
+		href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity= 
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="responsive.css"> 
+</head> 
+
+<body> 
+	<!-- Navbar header section -->
+	<header class="header"> 
+		<nav class="navbar"> 
+			<div class="logo"> 
+				<h2 class="logo-heading">Shruti Nagar</h2> 
+			</div> 
+			<div class="hamburger" id="hamburger"> 
+				<i class="fas fa-bars hamburger-icon"></i> 
+				<i class="fas fa-times cross-icon"></i> 
+			</div> 
+			<div class="menu"> 
+				<ul class="menu-list"> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#home"> 
+							Home 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#portfolio"> 
+							Portfolio 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#about"> 
+							About 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#services"> 
+							Services 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#contact"> 
+							Contact Me 
+						</a> 
+					</li> 
+				</ul> 
+			</div> 
+		</nav> 
+	</header> 
+
+	<!-- Main hero banner -->
+	<section id="home" class="hero"> 
+		<div class="intro"> 
+			<div class="headings"> 
+				<h3 class="greet-heading">Hello, I'm</h3> 
+				<h1 class="my-heading">Shruti Nagar</h1> 
+				<h4 class="sub-heading"> 
+					Web Developer 
+				</h4> 
+			</div> 
+			<div class="intro-buttons"> 
+				<button class="btn common-btn">Hire Me</button>
+				<a href="/shruti_nagar.pdf"><button class=" btn ghost-btn">Get Resume</button></a> 
+			</div> 
+		</div> 
+	</section> 
+
+	<!-- Portfolio Section -->
+	<section class="portfolio" id="portfolio"> 
+		<div class="portfolio-heading"> 
+			<h1 class="my-heading text-center">Featured Portfolio</h1> 
+		</div> 
+		<div class="portfolio-content"> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="images/web.png"
+								alt="Web Design Image"> 
+						</div> 
+						<h3 class="greet-heading blue-text">Web Design</h3> 
+						<p class="small-para blue-text">Designing</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="images/web1.png"
+								alt="Web Development Image"> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Web Development 
+						</h3> 
+						<p class="small-para blue-text">Development</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="images/web2.png" alt="UI/UX Image"> 
+						</div> 
+						<h3 class="greet-heading blue-text">UI/UX</h3> 
+						<p class="small-para blue-text">Design</p> 
+					</div> 
+				</div> 
+			</div> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="images/web3.png"
+								alt="Content Writting Image"> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Content Writing 
+						</h3> 
+						<p class="small-para blue-text">Writing</p> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<!-- About Section -->
+	<section id="about" class="about"> 
+		<div class="about-text"> 
+			<h1 class="my-heading">About Me</h1> 
+			<p class="lead-para"> 
+				Hi i'm shruti nagar currently pursuing post graduate in Master of computer
+                application from GLS UNIVERSITY, Ahmedabad.
+                My design philosophy revolves around simplicity and usability.
+                I am particularly interested in web development and python. 
+                My goal is to apply my technical skills and knowledge in a real-world 
+                environment, where I can contribute to meaningful projects and learn from experienced 
+                professionals. 
+			</p> 
+			<div class="tab-title">
+				<p class="tab-links active-link" onclick="opentab('skills')">
+				  Skills
+				</p>
+				<p class="tab-links" onclick="opentab('experience')">
+				  Experience
+				</p>
+				<p class="tab-links" onclick="opentab('education')">Education</p>
+			  </div>
+			  <div class="tab-contents active-tab" id="skills">
+				<ul>
+				  <li><span>HTML</span></li>
+				  <input type="range" class="slider" min="1" max="100" value="70" id="">
+				  <li><span>CSS</span></li>
+				  <input type="range" class="slider" min="1" max="100" value="60" id="">
+				  <li><span>Java Script</span></li>
+				  <input type="range" class="slider" min="1" max="100" value="50" id="">
+				  <li><span>Node js</span></li>
+				  <input type="range" class="slider" min="1" max="100" value="50" id="">
+				  <li><span>React js</span></li>
+				  <input type="range" class="slider" min="1" max="100" value="50" id="">
+				</ul>
+			  </div>
+			</div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Fresher</span><br />Web App Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />MCA Pursuing at GLS University
+                  Ahmedabad.
+                </li>
+                <li><span>2021</span><br />BCA from VNSGU Surat.</li>
+                <li><span>2018</span><br />HSC from GSHSEB Surat.</li>
+              </ul>
+            </div>
+		</div>
+		</div> 
+		<div class="about-image"> 
+			<img src="images/WhatsApp Image 2024-06-09 at 20.42.47.jpeg" alt="About Image"> 
+		</div> 
+	</section> 
+	
+
+	<!-- Services Section -->
+	<section class="services" id="services"> 
+		<div class="services-heading"> 
+			<h1 class="my-heading text-center">My Services</h1> 
+		</div> 
+		<div class="services-content"> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fas fa-paint-brush"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text">Web Design</h3> 
+						<p class="small-para"> 
+							Web design is the process of creating the visual and interactive aspects of websites.
+							It encompasses several disciplines and skills, including graphic design, 
+							user interface design (UI), user experience design (UX), and sometimes even aspects of web development.
+							Here’s an overview of the key components and concepts involved in web design 
+						</p> 
+						<p class="small-para"> 
+							The arrangement of elements on a webpage, including headers, footers, navigation menus, content areas, and sidebars.
+							Effective layouts ensure content is presented in a clear and engaging manner. 
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Web Development 
+						</h3> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fas fa-chart-line"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text">UI/UX</h3> 
+						<p class="small-para"> 
+							UI (User Interface) and UX (User Experience) are two closely related but distinct aspects of 
+							web and app design. Here's an explanation of each, along with how they intersect and 
+							contribute to creating effective digital products.UI design focuses on the visual and interactive elements of a product.
+							It’s about how the product’s interface looks and feels. 
+						</p> 
+						<p class="small-para"> 
+							Buttons, icons, sliders, and input fields.
+							Design how these elements behave and respond to user interactions 
+							(hover states, clicks, etc.). Use of a consistent design language across the interface.
+						</p> 
+					</div> 
+				</div> 
+			</div> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fas fa-quote-left"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Content Writting 
+						</h3> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining of websites. 
+							It includes aspects such as web design, 
+							web publishing, web programming, and 
+							database management. It is the creation 
+							of an application that works over the 
+							internet i.e. websites. 
+						</p> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining of websites. 
+							It includes aspects such as web design, 
+							web publishing, web programming, and 
+							database management. It is the creation of an 
+							application that works over the internet i.e. 
+							websites. 
+						</p> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<!-- Contact me section -->
+	<section class="contact" id="contact"> 
+		<div class="contact-heading"> 
+			<h1 class="my-heading text-center">Contact Me</h1> 
+		</div> 
+		<div class="contact-content"> 
+			<div class="contact-form-container"> 
+				<h1 class="greet-heading">Get In Touch</h1> 
+				<form class="contact-form"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Name"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Email"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Phone"> 
+					<textarea class="form-controls"
+							placeholder="Write your message"
+							name="message" id="" cols="30"
+							rows="10"> 
+					</textarea> 
+					<input class="form-btn btn common-btn"
+						type="submit" value="Send Message"> 
+				</form> 
+			</div> 
+			<div class="contact-details"> 
+				<h1 class="greet-heading">My Contact Details</h1> 
+				<div class="details"> 
+					<h5 class="contact-heading">EMAIL</h5> 
+					<p class="contact-text">example@gmail.com</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">PHONE</h5> 
+					<p class="contact-text">+91 0123456789</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">FAX</h5> 
+					<p class="contact-text">+91 0123456789</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">ADDRESS</h5> 
+					<p class="contact-text">98/975 Ajanta appartment</p> 
+					<p>Near TV tower</p> 
+					<p>Thaltej, Ahmedabad, 380054</p> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<!-- Footer section -->
+	<footer class="footer"> 
+		<div class="footer-content text-center">  
+			<div class="social-links"> 
+				<div class="footer-menu"> 
+					<ul class="footer-menu-list"> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="#"> 
+								<i class="fab fa-facebook-f"></i> 
+							</a> 
+						</li> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="https://x.com/shruti_nagar27"> 
+								<i class="fab fa-twitter"></i> 
+							</a> 
+						</li> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="https://www.instagram.com/nagarshruti416/"> 
+								<i class="fab fa-instagram"></i> 
+							</a> 
+						</li> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="https://www.linkedin.com/in/shruti-nagar-a93488306/"> 
+								<i class="fab fa-linkedin-in"></i> 
+							</a> 
+						</li> 
+					</ul> 
+				</div> 
+			</div> 
+		</div> 
+	</footer> 
+
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+		integrity= 
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"> 
+	</script> 
+	<script src="script.js"></script> 
+</body> 
+
+</html>
